@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 700px;
+  height: 950px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+
+}
+.Adidas {
+  font-size: 40px;
+  font-weight: 900;
+  color: #333;
+
+}
+.text {
+  font-size: 23px;
+  color: #aaa;
+}
+input {
+  margin: 2px;
+  font-size: 20px;
+}
+.input{
+  display: inline-block;
+}
+.rasm {
+  width:  680px;
+  height: 700px;  
+  position: relative;
+
+}
+.shoe {  
+  opacity: 0;
+}
+img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  object-fit: contain;
+  left: calc(50% - 250px);
+  top: calc(50% - 250px);
+}
+.label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: 670px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 40px;
+}
+button {
+  width: 200px;
+  height: 50px;
+  background: cyan;
+  font-size: 20px;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background:  #70D0D2 ;
+}
+
+.radio{
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  border-radius: 50%;
+}
+.blue:checked ~ .rasm > .top1 {
+  opacity: 1;
+}
+.green:checked ~ .rasm > .top2 {
+  opacity: 1;
+}
+.red:checked ~ .rasm > .top3 {
+  opacity: 1;
+}
